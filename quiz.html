@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Online Quiz</title>
+    </head>
+	<body>
+	   <!--The Css file is referenced in the HTML using the link tag.
+	     The path is relative as the Css file is in the same directory.-->
+		 
+        <link rel="stylesheet" href="quiz.css">
+        <h1>Do you know </h1>
+		
+		<!--quiz container will help us position the questions as layers that we can show and hide.-->
+		 <div class="quiz-container">
+	   <!--to hold the quiz. Div tag is used to divide the HTML document into sections.-->
+         <div id="quiz"></div>
+         </div>
+		 
+	    <!--buttons to navigate the quiz.-->
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
+        <button id="submit">Submit Quiz</button>
+		<button id="show">Show Performance</button>
+		
+        <div id="results"></div><!--to display results-->
+		<div id="chartDiv" style="width:50%;height:300px;margin:0 auto;"</div>
+        </body>
+   
+<!--script tag points to the external javascript file through the src attribute.-->
+<script type="text/javascript", src='quiz.js'></script>
+
+<!--to include charts in quiz library is included.-->
+<script src="http://code.jscharting.com/2.9.0/jscharting.js"></script>
+</html>
